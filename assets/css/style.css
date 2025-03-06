@@ -247,12 +247,14 @@ table tr td:last-child{
     border: 1px solid var(--border-color);
 }
 
-.trending table{
+.trending table,
+.tab-container .tab-content table {
     width: 100%;
     border-spacing: 0 20px;
 }
 
-.trending table th{
+.trending table th,
+.tab-container .tab-content table th{
     color: var(--color-white);
     font-weight: 500;
     text-align: left;
@@ -265,7 +267,8 @@ table tr td:last-child{
     cursor: unset !important;
 }
 
-.trending .coins-wrapper table tr{
+.trending .coins-wrapper table tr,
+.tab-container .tab-content #asset-list table tr{
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -274,7 +277,8 @@ table tr td:last-child{
     padding: 5px;
 }
 
-.trending table tr td{
+.trending table tr td,
+.tab-container .tab-content table tr td{
     color: var(--text-secondary);
     font-size: 13px;
 }
@@ -287,8 +291,22 @@ table tr td:last-child{
     border-radius: 0 12px 12px 0;
 }
 
+table tr td.rank{
+    padding-left: 10px;
+}
+
+table tr td.name-column{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 30px;
+    
+}
+
 .trending .coins-wrapper table tr:hover,
-.trending .coins-wrapper table tr:hover td{
+.trending .coins-wrapper table tr:hover td.table-fixed-column,
+.tab-container .tab-content #asset-list table tr:hover,
+.tab-container .tab-content #asset-list table tr:hover td.table-fixed-column {
     background: var(--background-color-secondary);
 }
 
@@ -332,4 +350,43 @@ table tr td:last-child{
     color: red;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.tab-container{
+    margin: 0 40px;
+    background-color: var(--background-color-primary);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.tab-container .tabs{
+    background: var(--background-color-secondary);
+    display: inline-flex;
+    padding: 10px 20px;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.tab-container .tabs .tab-button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-container .tabs .tab-button i{
+    font-size: 20px;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.tab-container .tabs .tab-button.active,
+.tab-container .tabs .tab-button.active i{
+    color: var(--color-white);
 }
