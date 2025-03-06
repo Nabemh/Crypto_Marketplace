@@ -315,3 +315,18 @@ table tr td:last-child{
     margin: 10px auto 20px;
     animation: spin 3s linear infinite;
 }
+
+@keyframes spin{
+
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+.error-message{
+    display: block;
+}
