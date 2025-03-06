@@ -184,6 +184,211 @@
             </div>
         </div>
 
+        <div class="tab-container"> 
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'tab1')"><i class="ri-apps-2-line"></i>
+                    Assets</button>
+                <button class="tab-button" onclick="openTab(event, 'tab2')"><i class="ri-arrow-left-right-line"></i>
+                    Exchange</button>
+                <button class="tab-button" onclick="openTab(event, 'tab3')"><i class="ri-exchange-line"></i>
+                    Categories</button>
+                <button class="tab-button" onclick="openTab(event, 'tab4')"><i class="ri-btc-line"></i>
+                    Holders</button>
+            </div>
+            <div class="tab-content" id="tab1"> 
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th class="table-fixed-column">Coin</th>
+                            <th>Price</th>
+                            <th>24h Price</th>
+                            <th>24hr Vol</th>
+                            <th>Total Vol</th>
+                            <th>Market Cap</th>
+                            <th>Last 7 Days</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="rank">1</td>
+                        <td class="name-column table-fixed-column"><img 
+                            src="bitcoin.png" alt="Bitcoin">Bitcoin <span>(BTC)</span></td>
+                        <td>$87000.00</td>
+                        <td class="red">$-2958.60</td>
+                        <td class="red">-4.56%</td>
+                        <td>$44, 892,288,629</td>
+                        <td>$1,221,893,651,830</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">1</td>
+                        <td class="name-column table-fixed-column"><img 
+                            src="bitcoin.png" alt="Bitcoin">Bitcoin <span>(BTC)</span></td>
+                        <td>$87000.00</td>
+                        <td class="red">$-2958.60</td>
+                        <td class="red">-4.56%</td>
+                        <td>$44, 892,288,629</td>
+                        <td>$1,221,893,651,830</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">2</td>
+                        <td class="name-column table-fixed-column"><img 
+                            src="bitcoin.png" alt="Bitcoin">Bitcoin <span>(BTC)</span></td>
+                        <td>$87000.00</td>
+                        <td class="red">$-2958.60</td>
+                        <td class="red">-4.56%</td>
+                        <td>$44, 892,288,629</td>
+                        <td>$1,221,893,651,830</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">3</td>
+                        <td class="name-column table-fixed-column"><img 
+                            src="bitcoin.png" alt="Bitcoin">Bitcoin <span>(BTC)</span></td>
+                        <td>$87000.00</td>
+                        <td class="red">$-2958.60</td>
+                        <td class="red">-4.56%</td>
+                        <td>$44, 892,288,629</td>
+                        <td>$1,221,893,651,830</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">4</td>
+                        <td class="name-column table-fixed-column"><img 
+                            src="bitcoin.png" alt="Bitcoin">Bitcoin <span>(BTC)</span></td>
+                        <td>$87000.00</td>
+                        <td class="red">$-2958.60</td>
+                        <td class="red">-4.56%</td>
+                        <td>$44, 892,288,629</td>
+                        <td>$1,221,893,651,830</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">5</td>
+                        <td class="name-column table-fixed-column"><img 
+                            src="bitcoin.png" alt="Bitcoin">Bitcoin <span>(BTC)</span></td>
+                        <td>$87000.00</td>
+                        <td class="red">$-2958.60</td>
+                        <td class="red">-4.56%</td>
+                        <td>$44, 892,288,629</td>
+                        <td>$1,221,893,651,830</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="spinner" id="asset-list-spinner"></div>
+            <div class="error-message" id="asset-list-error">API limit reached.
+                Please try again later
+            </div>
+            <div class="tab-content" id="tag2">
+                <div id="exhange-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th class="table-fixed-column">Exchange</th>
+                                <th>Trust Score</th>
+                                <th>24h Trade</th>
+                                <th>24hr Trade (Normal)</th>
+                                <th>Country</th>
+                                <th>Website</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="rank">1</td>
+                            <td class="name-column table-fixed-column"><img 
+                                src="bitcoin.png" alt="Binance">Binance</td>
+                            <td>10</td>
+                            <td>$289,567,987 BTC</td>
+                            <td>$189,912,108 BTC</td>
+                            <td class="name-column">Cayman Islands</td>
+                            <td class="name-column">https://www.binance.com/</td>
+                            <td> 2017 </td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank">2</td>
+                            <td class="name-column table-fixed-column"><img 
+                                src="bitcoin.png" alt="Binance">Binance</td>
+                            <td>10</td>
+                            <td>$289,567,987 BTC</td>
+                            <td>$189,912,108 BTC</td>
+                            <td class="name-column">Cayman Islands</td>
+                            <td class="name-column">https://www.binance.com/</td>
+                            <td> 2017 </td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank">3</td>
+                            <td class="name-column table-fixed-column"><img 
+                                src="bitcoin.png" alt="Binance">Binance</td>
+                            <td>10</td>
+                            <td>$289,567,987 BTC</td>
+                            <td>$189,912,108 BTC</td>
+                            <td class="name-column">Cayman Islands</td>
+                            <td class="name-column">https://www.binance.com/</td>
+                            <td> 2017 </td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank">3</td>
+                            <td class="name-column table-fixed-column"><img 
+                                src="bitcoin.png" alt="Binance">Binance</td>
+                            <td>10</td>
+                            <td>$289,567,987 BTC</td>
+                            <td>$189,912,108 BTC</td>
+                            <td class="name-column">Cayman Islands</td>
+                            <td class="name-column">https://www.binance.com/</td>
+                            <td> 2017 </td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank">4</td>
+                            <td class="name-column table-fixed-column"><img 
+                                src="bitcoin.png" alt="Binance">Binance</td>
+                            <td>10</td>
+                            <td>$289,567,987 BTC</td>
+                            <td>$189,912,108 BTC</td>
+                            <td class="name-column">Cayman Islands</td>
+                            <td class="name-column">https://www.binance.com/</td>
+                            <td> 2017 </td>
+                        </tr>
+
+                        <tr>
+                            <td class="rank">5</td>
+                            <td class="name-column table-fixed-column"><img 
+                                src="bitcoin.png" alt="Binance">Binance</td>
+                            <td>10</td>
+                            <td>$289,567,987 BTC</td>
+                            <td>$189,912,108 BTC</td>
+                            <td class="name-column">Cayman Islands</td>
+                            <td class="name-column">https://www.binance.com/</td>
+                            <td> 2017 </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+                <div class="spinner" id="asset-list-spinner"></div>
+                <div class="error-message" id="exhchange-list-error">API limit reached.
+                    Please try again later
+                </div>
+            </div>
+
+            <div class="tab-content" id="tag3">
+                <div id="category-list">
+                    
+                </div>
+            </div>
+        </div>
+
     </div>
 
     

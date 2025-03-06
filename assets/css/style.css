@@ -306,7 +306,7 @@ table tr td:last-child{
 }
 
 .spinner{
-    display: flex;
+    display: none;
     width: 50px;
     height: 50px;
     border: 6px solid var(--text-secondary);
@@ -328,5 +328,8 @@ table tr td:last-child{
 }
 
 .error-message{
-    display: block;
+    display: none;
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
 }
