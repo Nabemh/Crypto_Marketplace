@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css"> 
+    <title>Crypto Marketplace</title>
+</head>
+
+<body id="dark-theme">
+
+    <div class="main">
+        <div class="global">
+            <p>Coins: <b id="coins-count">14973</b></p>
+            <p>Exhanges: <b id="exhanges-count">1164</b></p>
+            <p>Market Cap: <span> <b id="marketCap">$2.297T</b></span>
+            <span id="marketCapChange"> -4.9% <i class="ri-arrow-down-s-fill"> </i></span></p>
+            <p> 24H Vol: <b id="volume">$109.452B</b></p>
+            <p>Dominance: <b id="dominance">BTC 53.0% - ETH 15.6%</b></p>
+        </div>
+
+        <nav>
+            <div class="left-section">
+                <a href="#" class="logo">LOGO.</a>
+                <div class="nav-links">
+                    <a href="/index.html" >Home</a>
+                    <a href="/pages/charts.html">Charts</a>
+                    <a href="/pages/search.html" class="active">Search</a>
+                    <a href="/pages/about.html">About Us</a>
+
+                </div>
+            </div>
+            <div class="right-section">
+                <form class="search" id="searchForm">
+                    <i class="ri-search-line"></i>
+                    <input type="text" id="searchInput"
+                    placeholder="Search for an asset..." required
+                    autocomplete="off">
+                </form>
+                <i id="theme-toggle" class="ri-sun-line"></i>
+            </div>
+        </nav>
+
+        <h3 id="searchHeading">Search results for "bit"</h3>
+        <div class="search-container">
+            <div class="item">
+                <h4>Asset Results</h4>
+                <div id="coins-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="table-fixed-column">Rank</th>
+                                <th>Coin</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td class="name-column"><img src="../bitcoin.png" alt="Bitcoin">Bitcoin
+                            <span>(BTC)</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td class="name-column"><img src="../bitcoin.png" alt="Bitcoin">Bitcoin
+                            <span>(BTC)</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td class="name-column"><img src="../bitcoin.png" alt="Bitcoin">Bitcoin
+                            <span>(BTC)</span></td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="spinner" id="coins-list-spinner"></div>
+            <div class="error-message" id="coins-list-error">API limit reached.
+                Please try again later
+            </div>
+            </div>
+
+            <div class="item">
+                <h4>Exhange Results</h4>
+                <div id="exchanges-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="table-fixed-column">Exchange</th>
+                                <th>Market</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="name-column"><img src="../bitcoin.png" alt="Bybit">Bybit</td>
+                            <td>Spot</td>
+                        </tr>
+
+                        <tr>
+                            <td class="name-column"><img src="../bitcoin.png" alt="Bybit">Bybit</td>
+                            <td>Spot</td>
+                        </tr>
+
+                        <tr>
+                            <td class="name-column"><img src="../bitcoin.png" alt="Bybit">Bybit</td>
+                            <td>Spot</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="spinner" id="exchanges-list-spinner"></div>
+                <div class="error-message" id="exchanges-list-error">API limit reached.
+                    Please try again later
+                </div>
+
+                <div class="item">
+                    <h4>NFT Results</h4>
+                    <div id="nfts-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="table-fixed-column">NFT</th>
+                                    <th>Symbol</th>
+                                </tr>
+                            </thead>
+
+                            <tr>
+                                <td class="name-column"><img src="../bitcoin.png" alt="Hitobito Reverse">Hitobito Reverse</td>
+                                <td class="name-column">HITOBITO REVERSE </td>
+                            </tr>
+
+                            <tr>
+                                <td class="name-column"><img src="../bitcoin.png" alt="Hitobito Reverse">Hitobito Reverse</td>
+                                <td class="name-column">HITOBITO REVERSE </td>
+                            </tr>
+
+                            <tr>
+                                <td class="name-column"><img src="../bitcoin.png" alt="Hitobito Reverse">Hitobito Reverse</td>
+                                <td class="name-column">HITOBITO REVERSE </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="spinner" id="nfts-list-spinner"></div>
+                <div class="error-message" id="nfts-list-error">API limit reached.
+                    Please try again later
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/Nabemh"><i class="ri-github-fill"></i></a>
+            <a href="https://github.com/Nabemh"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/Nabemh"><i class="ri-instagram-line"></i></a>
+            <a href="https://github.com/Nabemh"><i class="ri-twitter-x-line"></i></a>
+        </div>
+    </footer>
+
+    <button onclick="scrollToTop()" id="scrollTop"><i class="ri-arrow-up-s-line"></i></button>
+
+    
+</body>
+</html>
