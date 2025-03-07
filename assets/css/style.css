@@ -445,3 +445,19 @@ footer .social-icons a i{
     padding: 6px;
     font-size: 30px;
 }
+
+.hidden{
+    display: none
+}
+
+.chart-container{
+    margin: 40px 40px 0;
+    background: var(--background-color-primary);
+    border-radius: 12px;
+    height: 100vh;
+}
+
+.chart-container{
+    background: var(--background-color);
+    margin-bottom: 20px;
+}
