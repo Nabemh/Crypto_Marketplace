@@ -698,6 +698,25 @@ footer .social-icons a i{
 
 .coin-desc{
     background: var(--background-color-primary);
-    border: ;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 0 40px;
+    border: 1px solid var(--border-color);
+}
+
+.coin-desc h3{
+    color: var(--color-white);
+    font-weight: 600;
+    margin: 8px 0 20px;
+}
+
+.coin-desc p{
+    color: var(--text-secondary);
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.coin-desc p a{
+    color: var(--links-color);
 }
 
